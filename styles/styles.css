@@ -36,7 +36,7 @@ nav{
     background-color: #51089a30;
     border-bottom: #51089a9e solid 1px;
     border-radius: 0 0 40px 40px;
-    @media(min-width:506px){
+    @media(min-width:522px){
         .torinho::after{
             content: "Torinn";
         }
@@ -78,13 +78,13 @@ nav{
 .card{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 25px;
     gap:20px;
     width: 80%;
     background-color: #67022198;
     border: var(--principal-color) 1px solid;
     border-radius: 40px;
+    flex-direction: column;
 }
 
 .secao{
@@ -92,4 +92,75 @@ nav{
     background-color: #67022198;
     border: var(--principal-color) 1px solid;
     border-radius: 40px;
+}
+
+
+.itens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+ 
+.item {
+  padding: 12px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+}
+
+.item img:not(.xaco){
+    width: 150px;
+    transition: .1s;
+    padding: 10px;
+    &:hover{
+        scale: 1.5;
+        transition: .2s;
+        background-color: #00000050;
+        border-radius: 20px;
+    }
+}
+ 
+.item h2 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+ 
+.item p {
+  margin: 8px 0 0;
+}
+ 
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: .8rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+}
+ 
+.texto {
+  line-height: 1.6;
+}
+ 
+.linha-tempo,
+.lista {
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.caracteristica{
+    flex-grow: 1;
+    max-width: 450px;
+}
+.tracos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    b{
+        font-size: 18px;
+    }
+}
+
+.xaco{
+    width: 100px;
+    position: relative;
 }

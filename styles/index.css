@@ -14,18 +14,9 @@
         background-image: url(../images/Torinn.webp);
     }
 }
-
-.caracteristica{
-    flex-grow: 1;
-    max-width: 450px;
-}
-.tracos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:10px;
-    b{
-        font-size: 18px;
-    }
+.card{
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 bar{
