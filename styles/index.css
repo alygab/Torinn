@@ -1,0 +1,70 @@
+
+.heroi{
+    max-width: 600px;
+    max-height: 600px;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 10px;
+    background-image: url(../images/Torinn_escrito.webp);
+    background-size:contain;
+    transition:.2s;
+    &:hover{
+        transition:.5s;
+        scale: 1.05;
+        background-image: url(../images/Torinn.webp);
+    }
+}
+
+.caracteristica{
+    flex-grow: 1;
+    max-width: 450px;
+}
+.tracos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    b{
+        font-size: 18px;
+    }
+}
+
+bar{
+    width: 100%;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #400214;
+    background-image: linear-gradient(90deg, #e60045 75%,#400214 75%);
+}
+
+.atribute{
+    width: 100%;
+}
+
+.atributos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+    div{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #460317a2;
+        border: #e60045 1px solid;
+        border-radius: 20px;
+        gap: 5px;
+        align-items: center;
+
+        span{
+            background-color: #400214;
+            border: #e60045 1px solid;
+            padding: 8px;
+            border-radius: 100%;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
